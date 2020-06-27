@@ -3,7 +3,7 @@ import '../assets/main.css';
 
 function Card(props) {
   return (
-    <div class="container mx-auto">
+    <div class="container mx-auto px-6 py-4">
       <div className="grid grid-cols-3 gap-4">
         {props.data.map((d, i) => {
           const { image, title, category } = d;

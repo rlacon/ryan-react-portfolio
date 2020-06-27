@@ -578,19 +578,6 @@ video {
   height: auto;
 }
 
-.App {
-  position: relative;
-  min-height: 100vh;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding-top: 2.5rem;
-  height: 2.5rem
-}
-
 .container {
   width: 100%;
 }
@@ -598,28 +585,24 @@ footer {
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
-    padding: 2rem;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 2rem;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-    padding: 2rem;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding: 2rem;
   }
 }
 

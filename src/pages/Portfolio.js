@@ -10,7 +10,7 @@ function Portfolio(props) {
     { image: "https://source.unsplash.com/random", title: "Ghost Writer", category: "Development" }
   ]);
   return (
-    <Card data={data} />
+    <Card className="mt-100000" data={data} />
   );
 }
 
