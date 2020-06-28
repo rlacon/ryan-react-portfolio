@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import '../assets/main.css';
+import styled from "styled-components"
 
 class Home extends Component {
   render() {
+    const Title = styled.h1`
+      font-size: 1.5em;
+      text-align: center;
+      color: palevioletred;
+    `;
+    const Wrapper = styled.section`
+      padding: 4em;
+      background: papayawhip;
+    `;
     return (
-      <section>
-        <div className="row banner">
-          <div className="banner-text">
-            <h1 className="text-red-300">Creative Technologist</h1>
-            <h3>test</h3>
-            <hr />
-          </div>
-        </div>
-      </section>
+      <Wrapper>
+        <Title>Creative Technologist</Title>
+        <p>test</p>
+      </Wrapper>
     );
   }
 }

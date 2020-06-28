@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import $ from 'jquery';
 import './assets/main.css';
+import StyledForm from "./styles";
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -18,53 +19,45 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      foo: 'bar',
       portfolioData: {}
     };
   }
 
-  getportfolioData() {
-    $.ajax({
-      url: '/portfolioData.json',
-      dataType: 'json',
-      cache: false,
-      success: function (data) {
-        this.setState({ portfolioData: data });
-      }.bind(this),
-      error: function (xhr, status, err) {
-        console.log(err);
-        alert(err);
-      }
-    });
-  }
-
-  // state = {
-  //   loading: true
-  // };
+  // getPortfolioData() {
+  //   debugger;
+  //   $.ajax({
+  //     url: '/portfolioData.json',
+  //     dataType: 'json',
+  //     cache: false,
+  //     success: function (data) {
+  //       this.setState({ portfolioData: data });
+  //     }.bind(this),
+  //     error: function (xhr, status, err) {
+  //       console.log(err);
+  //       alert(err);
+  //     }
+  //   });
+  // }
 
   componentDidMount() {
-    this.getportfolioData();
-    // demoAsyncCall().then(() => this.setState({ loading: false }));
+    fetch('./portfolioData.json')
+      .then(response => response.json())
+      .then(data => this.setState({ portfolioData: data }));
   }
 
   render() {
-    // const { loading } = this.state;
-    
-    // if(loading) {
-    //   return null;
-    // }
 
     return (
       <BrowserRouter>
         <Switch>
         <React.Fragment>
-          <div className="relative min-h-screen">
+          <div className="relative min-h-screen bg-gray-900">
             <Navbar />
             <Route exact path="/" data={this.state.portfolioData.main} render={() => {
               return <Home />
             }} />
 
-            <Route path="/about" render={() => {
+            <Route path="/about" data={this.state.portfolioData.main} render={() => {
               return <About />
             }} />
             <Route path="/resume" render={() => {
@@ -89,10 +82,5 @@ class App extends Component {
     );
   }
 }
-
-// function demoAsyncCall() {
-//   return new Promise((resolve) => setTimeout(() => resolve(), 2500));
-// }
-
 
 export default App;

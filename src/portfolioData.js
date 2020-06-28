@@ -1,0 +1,105 @@
+const portfolioData = [
+  {
+    "main": {
+      "name": "Ryan Lacon",
+      "occupation": "Creative Technologist",
+      "description": "",
+      "image": "profilepic.jpg",
+      "bio": "My interest in technology began in the late 90s when I built my first website dedicated to Pokemon fandom. I've always been interested in creativity whether it involved drawing comics, writing, photography, or charcoal sketching. I was ecstatic when I discovered UX Design, which seemed like a perfect blend of creativity and technology. I consumed all the material I could about the subject before eventually going back to school and earning my Master's degree in the subject. While collaborating with developers, I became interested in learning more about how the technology worked and immersed myself in the world of web development. I found that coding agreed a lot with the analytical side of my mind that made me a great researcher, and continued my journey into development. As long as I have something new to learn, I'm always satisfied.",
+      "contactmessage": "",
+      "email": "ryan.lacon@gmail.com",
+      "phone": "(610) 551-5899",
+      "address": {
+        "city": "Philadelphia",
+        "state": "PA"
+      },
+      "website": "http://www.timbakerdev.com",
+      "resumedownload": "http://google.com",
+      "social": [
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/ryanlacon/",
+          "className": "fa fa-linkedin"
+        },
+        {
+          "name": "github",
+          "url": "https://github.com/rlacon",
+          "className": "fa fa-github"
+        }
+      ]
+    },
+    "resume": {
+      "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+      "education": [
+        {
+          "school": "Penn LPS",
+          "degree": "Certificate in Full-Stack Development",
+          "graduated": "August 2019",
+          "description": "Enrolled in a 12-week Full Stack Flex course to gain knowledge to build dynamic end-to-end web applications and become a full stack web developer. Collaborated with colleagues to plan, design, and develop applications that applied the lesson curriculum. Learned technologies such as HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB, MySQL, Command Line, and Git."
+        },
+        {
+          "school": "Thomas Jefferson University",
+          "degree": "M.S. - User Experience Design",
+          "graduated": "December 2018",
+          "description": "Graduated with my M.S. as a student of the accelerated Master's program. Collaborated with classmates of various skill sets and backgrounds to create solutions to problems with technology. Performed ethnographic research such as contextual inquiries, survey crafting, and user testing/interviews. Created wireframes, prototypes, data visualizations, and personas to demonstrate solutions."
+        },
+        {
+          "school": "General Assembly",
+          "degree": "Certificate in UX Design",
+          "graduated": "August 2016"
+        },
+        {
+          "school": "Temple University",
+          "degree": "B.A. - English",
+          "graduated": "December 2014"
+        }
+      ],
+      "work": [
+        {
+          "company": "OnCourse Systems for Education",
+          "title": "JavaScript Developer",
+          "years": "November 2019 - Present",
+          "description": "Refactoring codebase from Ext.js 4.0 to 7.0. Fixing bugs and fulfilling ticket requests through Wrike platform. Building new features requested by project managers and school districts. Conducting QA testing on staging and production pipelines to ensure quality builds. Using design expertise to improve existing UI layouts when upgrading older applications."
+        },
+        {
+          "company": "TeleRx",
+          "title": "UX Designer",
+          "years": "March 2020 - June 2020",
+          "description": "Redesigned the user experience for a web application that allows pharmacy technicians to intake prescriptions, send them to pharmacists for approval, and dispense the medications. Rearranged the information architecture for optimal user flow. Created wireframes and prototypes to demonstrate improvements to the user experience and enhanced the visual design to meet accessibility standards."
+        },
+        {
+          "company": "Freelance",
+          "title": "Human-Centered Design Contractor",
+          "years": "December 2018 - June 2019",
+          "description": "Created Axure prototypes for a pharmaceutical company to improve the experience of searching/filtering documents in a database. Conducted market research to inform the IA for an apparel review app and designed wireframes."
+        },
+        {
+          "company": "LiquidHub",
+          "title": "Designer",
+          "years": "February 2018 - April 2018",
+          "description": "Shadowed UX researchers at a reinsurance company on a 3-month assignment. Used holistic design & research methods to assist departments in visualizing their workflows. Designed a user journey map to identify bottlenecks in workflows and opportunities for improvements."
+        },
+        {
+          "company": "AmerisourceBergen",
+          "title": "Junior UX Designer",
+          "years": "October 2016 - April 2017",
+          "description": "Assisted lead designer by creating specifications for UI mockups. Exported icons and assets with precision and uploaded to JIRA and Sharepoint. Worked closely with an internationally recognized brand, using exact colors, typeface, and logos when designing mockups."
+        }
+      ]
+    },
+    "testimonials": {
+      "testimonials": [
+        {
+          "text": "Ryan was an exceptional student and developer throughout the entirety of the PennLPS Coding Bootcamp. He is a thoughtful and collaborative communicator both with the Instructional Staff and within his various groups. His affinity for project planning, attention to detail and natural design talent have contributed to his success as a developer. Ryan helped to lead the ideation and implementation of his group projects. His background in UX/UI is a unique and advantageous skill which helped him to build advanced applications. Ryan was able to thoroughly scope each of his project, from front-end design to back-end logic, anticipating specific user interactions and potential roadblocks. He and his groups were successful in the deployment of their applications and have plans to build out additional features and optimize their previous logic. Ryan will be a fantastic member of any team and I look forward to watching him grow as a developer!",
+          "user": "Kathryn Breslin, Teaching Assistant at Penn LPS"
+        },
+        {
+          "text": "While at Jefferson, I had the pleasure of teaching and advising Ryan during his Thesis Prep and Thesis Defense course. I first want to mention that Ryan demonstrated a work ethic, passion, and drive that was above and beyond our expectations. As a result, his final project was not only one of the strongest I have seen during my time at Jefferson but also one that garnished continued interest after he graduated. Ryan has a real strength for analytical thinking, design strategy, and problem definition – he would best be utilized in a space where he can put those abilities to the task. I highly recommend Ryan and believe he would be a tremendous value to any design team in the innovation space.",
+          "user": "Mike Begley, Professor at Thomas Jefferson University"
+        }
+      ]
+    }
+  }
+];
+
+export default portfolioData;
