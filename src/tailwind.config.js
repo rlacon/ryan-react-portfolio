@@ -5,7 +5,14 @@ module.exports = {
       display: ['Gilroy', 'sans-serif'],
       body: ['Graphik', 'sans-serif'],
     },
+    container: {padding: '100px'},
     extend: {
+      spacing: {
+        sm: '8px',
+        md: '16px',
+        lg: '24px',
+        xl: '48px',
+      },
       colors: {
         cyan: '#9cdbff',
       },

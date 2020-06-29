@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../assets/main.css';
-import Card from '../components/Card';
+import CardGallery from '../components/CardGallery';
 
 function Portfolio(props) {
-  const [data, setData] = useState([
+  const [data] = useState([
     { image: "https://source.unsplash.com/random", title: "Ghost Writer", category: "Development" },
     { image: "https://source.unsplash.com/random", title: "Ghost Writer", category: "Development" },
     { image: "https://source.unsplash.com/random", title: "Ghost Writer", category: "Development" },
     { image: "https://source.unsplash.com/random", title: "Ghost Writer", category: "Development" }
   ]);
   return (
-    <Card className="mt-100000" data={data} />
+    <CardGallery data={data} />
   );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/main.css';
 
-function Card(props) {
+function CardGallery(props) {
   return (
     <div className="container mx-auto px-6 py-4">
       <div className="grid grid-cols-3 gap-4">
@@ -27,4 +27,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default CardGallery;

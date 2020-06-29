@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import $ from 'jquery';
+import React, { useState, useEffect } from 'react'
+import { Switch, Route } from 'react-router-dom'
 import './assets/main.css';
-import StyledForm from "./styles";
 
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer';
 
 import About from './pages/About';
@@ -14,50 +12,32 @@ import Portfolio from './pages/Portfolio';
 import Home from './pages/Home'
 import MockProj from './pages/MockProj';
 
-class App extends Component {
+function App() {
+  const [data, setData] = useState({ portfolioData: {}, navbarOpen: false });
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      portfolioData: {}
-    };
-  }
+  const handleNavbar = () => {
+    setData({ navbarOpen: !data.navbarOpen });
+  };
 
-  // getPortfolioData() {
-  //   debugger;
-  //   $.ajax({
-  //     url: '/portfolioData.json',
-  //     dataType: 'json',
-  //     cache: false,
-  //     success: function (data) {
-  //       this.setState({ portfolioData: data });
-  //     }.bind(this),
-  //     error: function (xhr, status, err) {
-  //       console.log(err);
-  //       alert(err);
-  //     }
-  //   });
-  // }
-
-  componentDidMount() {
+  useEffect(() => {
     fetch('./portfolioData.json')
       .then(response => response.json())
-      .then(data => this.setState({ portfolioData: data }));
-  }
+      .then(data => setData({ portfolioData: data }));
+  }, []);
 
-  render() {
-
-    return (
-      <BrowserRouter>
-        <Switch>
+  return (
+      <Switch>
         <React.Fragment>
-          <div className="relative min-h-screen bg-gray-900">
-            <Navbar />
-            <Route exact path="/" data={this.state.portfolioData.main} render={() => {
+          <div className="relative min-h-screen bg-white pt-20 pb-20">
+            <Navbar
+              navbarState={data.navbarOpen}
+              handleNavbar={handleNavbar}
+            />
+            <Route exact path="/" data={data.portfolioData && data.portfolioData.main} render={() => {
               return <Home />
             }} />
 
-            <Route path="/about" data={this.state.portfolioData.main} render={() => {
+            <Route path="/about" render={() => {
               return <About />
             }} />
             <Route path="/resume" render={() => {
@@ -67,20 +47,17 @@ class App extends Component {
               return <Portfolio />
             }} />
 
-            <Route path="/testimonials" data={this.state.portfolioData.testimonials} render={() => {
+            <Route path="/testimonials" data={data.portfolioData && data.portfolioData.testimonials} render={() => {
               return <Testimonials />
             }} />
             <Route path="/portfolio/mockproj" render={() => {
               return <MockProj />
             }} />
             <Footer />
-            <div className="space-y-100"></div>
           </div>
-          </React.Fragment>
-        </Switch>
-      </BrowserRouter>
-    );
-  }
+        </React.Fragment>
+      </Switch>
+  );
 }
 
 export default App;
