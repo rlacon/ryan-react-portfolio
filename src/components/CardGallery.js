@@ -4,11 +4,11 @@ import '../assets/main.css';
 function CardGallery(props) {
   return (
     <div className="container mx-auto px-6 py-4">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
         {props.data.map((d, i) => {
           const { image, title, category } = d;
           return (
-            <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100" key={i}>
+            <div className="rounded overflow-hidden shadow-lg bg-gray-100" key={i}>
               <img className="w-full" src={image} alt="Project" />
               <div className="px-6 py-4">
                 <div className="font-bold text-purple-500 text-xl mb-2">{title}</div>
@@ -28,3 +28,4 @@ function CardGallery(props) {
 }
 
 export default CardGallery;
+

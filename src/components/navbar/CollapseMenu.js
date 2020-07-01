@@ -23,6 +23,7 @@ export default CollapseMenu;
 const CollapseWrapper = styled.div`
   background: #2d3436;
   position: fixed;
+  z-index: 10;
   top: 4.5rem;
   left: 0;
   right: 0;
@@ -31,11 +32,9 @@ const CollapseWrapper = styled.div`
 const NavLinks = styled.ul`
   list-style-type: none;
   padding: 2rem 1rem 2rem 2rem;
-
   & li {
     transition: all 300ms linear 0s;
   }
-
   & a {
     font-size: 1.4rem;
     line-height: 2;
@@ -43,10 +42,9 @@ const NavLinks = styled.ul`
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-
     &:hover {
-      color: #fdcb6e;
-      border-bottom: 1px solid #fdcb6e;
+      color: #9f7aea;
+      border-bottom: 1px solid #9f7aea;
     }
   }
 `;

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import portfolioData from '../assets/portfolioData';
-import styled, { keyframes } from "styled-components"
+import styled, { keyframes } from "styled-components";
 
 class About extends Component {
-
   render() {
-    const data = portfolioData.main
+    const data = portfolioData.main;
     const name = data.name;
     const profilepic = "images/" + data.image;
     const bio = data.bio;
@@ -37,13 +36,13 @@ export default About;
 
 const rotate = keyframes`
   z-index: 1;
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  `;
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 const Rotate = styled.div`
   display: inline-block;

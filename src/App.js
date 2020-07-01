@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './assets/main.css';
 
 import Navbar from './components/navbar/Navbar';
@@ -9,7 +9,7 @@ import About from './pages/About';
 import Resume from './pages/Resume';
 import Testimonials from './pages/Testimonials';
 import Portfolio from './pages/Portfolio';
-import Home from './pages/Home'
+import Home from './pages/Home';
 import MockProj from './pages/MockProj';
 
 function App() {
