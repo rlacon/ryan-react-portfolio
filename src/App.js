@@ -20,9 +20,11 @@ function App() {
   };
 
   useEffect(() => {
-    fetch('./portfolioData.json')
+    fetch('/portfolioData.json')
       .then(response => response.json())
-      .then(data => setData({ portfolioData: data }));
+      // console.log(response.text())
+      .then(data => setData({ portfolioData: data }))
+      // .catch())
   }, []);
 
   return (

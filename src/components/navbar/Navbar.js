@@ -39,7 +39,7 @@ export default Navbar;
 const NavBar = styled.div`
   position: fixed;
   height: 5rem;
-  line-height:5rem;
+  line-height: 5rem;
   width: 100%;
   top: 0;
   left: 0;
