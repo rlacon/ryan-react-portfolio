@@ -16,6 +16,11 @@ module.exports = {
       '6xl': '4rem',
       '7xl': '5rem',
     },
+    theme: {
+      height: {
+        'h-half-screen': '50vh'
+      }
+    },
     container: {
       center: true,
     },
