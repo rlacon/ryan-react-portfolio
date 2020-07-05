@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components";
-import { NavLink } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import '../assets/main.css';
 

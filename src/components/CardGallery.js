@@ -17,7 +17,7 @@ function CardGallery(props) {
                 <p className="text-gray-700 text-base">{description}</p>
               </div>
               <div className="px-6 py-4">
-                <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 border border-purple-700 rounded">
+                <button href={mainLink} className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 border border-purple-700 rounded">
                   View Project
                 </button>
                 <a href={githubLink} className="text-blue500 hover:text-blue700 underline font-bold py-4 px-8 uppercase tracking-wider">Github</a>
