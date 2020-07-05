@@ -9,6 +9,7 @@
     "jquery": "^3.5.1",
     "live-server": "^1.2.1",
     "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.13.1",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.2.0",

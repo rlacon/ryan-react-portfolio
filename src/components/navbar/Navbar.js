@@ -9,7 +9,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <NavBar>
+      <NavBar className="bg-gray-800">
         <FlexContainer>
           <Brand />
           <NavLinks>
@@ -43,7 +43,6 @@ const NavBar = styled.div`
   width: 100%;
   top: 0;
   left: 0;
-  background: #2d3436;
   z-index: 10;
   font-size: 1.4rem;
 `;

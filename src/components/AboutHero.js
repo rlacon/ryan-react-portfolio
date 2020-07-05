@@ -4,14 +4,10 @@ import '../assets/main.css';
 
 function AboutHero(props) {
   return (
-    <div className="p-4 bg-gradient-t-blue-burst flex-wrap items-center xl:flex lg:flex md:flex sm:flex">
-      <div className="flex-1 p-6 m-auto lg:max-w-xs xl:max-w-xs">
-        <h2 className="font-bold text-5xl text-white">About Me</h2>
-        <p className="whitespace-pre-line text-xl text-white">{bio}</p>
-      </div>
-      <div className="flex-1 p-4 align-middle mx-auto sm:w-6/12 md:w-6/12 lg:w-6/12 xl:w-6/12">
-        <img className="rounded-full" src={profilepic} alt="Ryan Lacon Profile Pic" />
-      </div>
+    <div className="p-6 bg-gradient-t-blue-burst overflow-auto">
+      <img className="m-6 w-1/4 float-right rounded-full" src={profilepic} alt="Ryan Lacon Profile Pic" />
+      <h2 className="font-bold text-5xl text-white">About Me</h2>
+      <p className="text-xl text-white">{bio}</p>
     </div>
   );
 }

@@ -16,10 +16,8 @@ module.exports = {
       '6xl': '4rem',
       '7xl': '5rem',
     },
-    theme: {
-      height: {
-        'h-half-screen': '50vh'
-      }
+    height: {
+      'h-half-screen': '50vh'
     },
     container: {
       center: true,
@@ -55,6 +53,15 @@ module.exports = {
         'red': '#f00',
         'blue': '#00f',
         cyan: '#9cdbff',
+        blue100: '#ebf8ff',
+        blue200: '#bee3f8',
+        blue300: '#90cdf4',
+        blue400: '#63b3ed',
+        blue500: '#4299e1',
+        blue600: '#3182ce',
+        blue700: '#2b6cb0',
+        blue800: '#2c5282',
+        blue900: '#2a4365'
       },
       linearGradientDirections: { // defaults to these values
         't': 'to top',

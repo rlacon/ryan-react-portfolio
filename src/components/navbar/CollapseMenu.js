@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 function CollapseMenu(props) {
   if (props.navbarState) {
     return (
-      <CollapseWrapper>
+      <CollapseWrapper className="bg-gray-800">
         <NavLinks>
           <li><NavLink to="/" onClick={props.handleNavbar}>Home</NavLink></li>
           <li><NavLink to="/portfolio" onClick={props.handleNavbar}>Portfolio</NavLink></li>
@@ -21,7 +21,6 @@ function CollapseMenu(props) {
 export default CollapseMenu;
 
 const CollapseWrapper = styled.div`
-  background: #2d3436;
   position: fixed;
   z-index: 10;
   top: 4.5rem;
