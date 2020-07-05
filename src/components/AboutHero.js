@@ -18,6 +18,4 @@ export default AboutHero;
 
 const data = portfolioData.main;
 const profilepic = "images/" + data.image;
-const bio = "I've always been interested in anything creative, whether it involved drawing comics, writing, photography, or charcoal sketching. " 
-  + "I was ecstatic to discover UX Design, which seemed like a perfect blend of creativity and technology. " 
-  + "Soon, I became interested in learning more about how the technology worked and immersed myself in the world of web development. I found that coding agreed a lot with the analytical side of my mind that made me a great researcher, and continued my journey into development."
+const bio = data.bio;
