@@ -3,7 +3,8 @@ import '../assets/main.css';
 
 function CardGallery(props) {
   return (
-    <div className="container mx-auto px-6 py-4">
+    <section id='work' className="container mx-auto px-6 py-4">
+      <h1 className="text-center mb-6 font-bold text-5xl text-purple-500">Projects</h1>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
         {props.data.map((d, i) => {
           const { image, title, description, category, githubLink, mainLink } = d;
@@ -25,7 +26,7 @@ function CardGallery(props) {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 
