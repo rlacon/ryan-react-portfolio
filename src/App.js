@@ -4,9 +4,10 @@ import './assets/main.css';
 
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from "./components/ScrollToTop";
+
 
 import About from './pages/About';
-import Resume from './pages/Resume';
 import Testimonials from './pages/Testimonials';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
@@ -42,9 +43,7 @@ function App() {
             <Route path="/about" render={() => {
               return <About />
             }} />
-            <Route path="/resume" render={() => {
-              return <Resume />
-            }} />
+
             <Route exact path="/portfolio" render={() => {
               return <Portfolio />
             }} />
@@ -55,8 +54,11 @@ function App() {
             <Route path="/portfolio/mockproj" render={() => {
               return <MockProj />
             }} />
+             <ScrollToTop/>
             <Footer />
+           
           </div>
+          
         </React.Fragment>
       </Switch>
   );
