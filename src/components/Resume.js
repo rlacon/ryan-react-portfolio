@@ -15,7 +15,6 @@ class Resume extends Component {
           <div className="col-span-2">
             <p className="text-gray-700 text-lg leading-8">{t.description}</p>
           </div>
-
         </blockquote>
         <hr />
       </div>
@@ -32,7 +31,6 @@ class Resume extends Component {
           <div className="col-span-2">
             <p className="text-gray-700 text-lg leading-8">{t.description}</p>
           </div>
-
         </blockquote>
         <hr />
       </div>
@@ -40,12 +38,12 @@ class Resume extends Component {
 
     return (
       <div className="container mx-auto px-6 py-4">
-        <h1 className="text-center mb-6 font-bold text-5xl text-purple-500">Resume</h1>
+        <h2 className="text-center mb-6 font-bold text-5xl text-purple-500">Resume</h2>
         <div className="mb-12">
-          <h2 className="text-center mb-2 font-bold text-3xl text-purple-700">Work</h2>
+          <h3 className="text-center mb-2 font-bold text-3xl text-purple-700">Work</h3>
           {work}
         </div>
-        <h2 className="text-center mb-2 font-bold text-3xl text-purple-700">Education</h2>
+        <h3 className="text-center mb-2 font-bold text-3xl text-purple-700">Education</h3>
         {education}
       </div>
     );

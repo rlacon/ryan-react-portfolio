@@ -10,8 +10,8 @@ function Hero(props) {
         <RotatingTextStyle>
           <h2 className="py-8 text-5xl font-bold mb-2 text-white">I'm a <ReactRotatingText className="RotatingTextStyle" items={['Developer', 'Designer', 'Researcher', 'Problem-Solver']} /></h2>
         </RotatingTextStyle>
-        <AnchorLink href="#skills" className="underline text-white font-bold py-4 pr-8 uppercase tracking-wider">Skills</AnchorLink>
-        <AnchorLink className="underline text-white font-bold py-4 px-8 uppercase tracking-wider" href="#work">See my work</AnchorLink>
+        <AnchorLink offset='100' href="#skills" className="underline text-white font-bold py-4 pr-8 uppercase tracking-wider">Skills</AnchorLink>
+        <AnchorLink offset='100' className="underline text-white font-bold py-4 px-8 uppercase tracking-wider" href="#work">See my work</AnchorLink>
       </div>
     </div>
   );

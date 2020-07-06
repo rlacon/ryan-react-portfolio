@@ -4,6 +4,12 @@ module.exports = {
     require('tailwindcss-gradients')
   ],
   theme: {
+    inset: {
+      '0': 0,
+      auto: 'auto',
+      '1/2': '50%',
+      '100': '100px'
+    },
     fontSize: {
       sm: ['14px', '20px'],
       base: ['16px', '24px'],

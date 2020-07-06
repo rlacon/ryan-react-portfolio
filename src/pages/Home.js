@@ -1,10 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import SkillsGallery from '../components/SkillsGallery';
 import CardGallery from '../components/CardGallery';
 import '../assets/main.css';
+import { Transition } from 'react-transition-group';
+
+const duration = 3000;
+
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: -3,
+}
+
+const transitionStyles = {
+  entering: { opacity: 1 },
+  entered:  { opacity: 1 },
+  exiting:  { opacity: 0 },
+  exited:  { opacity: 0 },
+};
 
 function Home(props) {
+
+ const [fade, setFade] = useState(false)
+
+// const changeFade = () => {
+//   setFade(!fade)
+// }
+useEffect(() => {
+  setFade(true)
+},[])
+
+
   const [data] = useState([
     { image: "https://source.unsplash.com/random", title: "Ghost Writer", description: "An app that does this", category: "Development", githubLink: "www.google.com" },
     { image: "https://source.unsplash.com/random", title: "Ghost Writer", description: "An app that does this", category: "Development" },
@@ -21,9 +47,19 @@ function Home(props) {
 
   return (
     <>
+     <Transition in={fade} timeout={duration}>
+    {state => (
+      <div style={{
+        ...defaultStyle,
+        ...transitionStyles[state]
+      }}>
       <Hero />
       <SkillsGallery data={skillData} />
       <CardGallery data={data} />
+      </div>
+    )}
+  </Transition>
+      {/* <button onClick={changeFade}>change fade</button> */}
     </>
   );
 }

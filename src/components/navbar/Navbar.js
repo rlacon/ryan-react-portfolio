@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from "styled-components";
 import Brand from "./Brand";
@@ -6,14 +6,14 @@ import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
 
 const Navbar = (props) => {
-
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <NavBar className="bg-gray-800">
         <FlexContainer>
           <Brand />
           <NavLinks>
-            <NavLink to="/">Home</NavLink>
+            <NavLink data={isOpen && setIsOpen} to="/" onClick={() => setIsOpen(!isOpen)} >Home</NavLink>
             <NavLink to="/portfolio">Projects</NavLink>
             <NavLink to="/about">About</NavLink>
             <NavLink to="/testimonials">Testimonials</NavLink>

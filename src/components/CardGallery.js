@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react';
 import '../assets/main.css';
+import Transition from './Transition.js'
 
 function CardGallery(props) {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <section id='work' className="container mx-auto px-6 py-4">
       <h1 className="text-center mb-6 font-bold text-5xl text-purple-500">Projects</h1>
@@ -31,4 +33,3 @@ function CardGallery(props) {
 }
 
 export default CardGallery;
-
