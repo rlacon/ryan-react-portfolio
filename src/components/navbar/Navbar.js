@@ -16,7 +16,6 @@ const Navbar = (props) => {
             <NavLink data={isOpen && setIsOpen} to="/" onClick={() => setIsOpen(!isOpen)} >Home</NavLink>
             <NavLink to="/portfolio">Projects</NavLink>
             <NavLink to="/about">About</NavLink>
-            <NavLink to="/testimonials">Testimonials</NavLink>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu

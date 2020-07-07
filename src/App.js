@@ -8,17 +8,13 @@ import Footer from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
 
 import About from './pages/About';
-import Testimonials from './pages/Testimonials';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
 import MockProj from './pages/MockProj';
-import Dummy from './components/Dummy';
 
 function App() {
   const [data, setData] = useState({ portfolioData: {}, navbarOpen: false });
   const [toggleTransition, setToggleTransition] = useState(false)
-
-
 
   const toggle = () => {
     setToggleTransition(true)
@@ -45,7 +41,7 @@ function App() {
             handleNavbar={handleNavbar}
           />
           <Route exact path="/" data={data.portfolioData && data.portfolioData.main} render={() => {
-            return <Dummy setToggleTransition={setToggleTransition}/>
+            return <Home setToggleTransition={setToggleTransition}/>
           }} />
 
           <Route path="/about" render={() => {
@@ -54,10 +50,6 @@ function App() {
 
           <Route exact path="/portfolio" render={() => {
             return <Portfolio />
-          }} />
-
-          <Route path="/testimonials" data={data.portfolioData && data.portfolioData.testimonials} render={() => {
-            return <Testimonials />
           }} />
 
           <Route path="/portfolio/mockproj" render={() => {

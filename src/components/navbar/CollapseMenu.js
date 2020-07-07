@@ -10,7 +10,6 @@ function CollapseMenu(props) {
           <li><NavLink to="/" onClick={props.handleNavbar}>Home</NavLink></li>
           <li><NavLink to="/portfolio" onClick={props.handleNavbar}>Portfolio</NavLink></li>
           <li><NavLink to="/about" onClick={props.handleNavbar}>About</NavLink></li>
-          <li><NavLink to="/testimonials" onClick={props.handleNavbar}>Testimonials</NavLink></li>
         </NavLinks>
       </CollapseWrapper>
     );

@@ -5,7 +5,7 @@ import CardGallery from '../components/CardGallery';
 import '../assets/main.css';
 import { Transition } from 'react-transition-group';
 
-const duration = 3000;
+const duration = 150;
 
 const defaultStyle = {
   transition: `opacity ${duration}ms ease-in-out`,
@@ -13,22 +13,20 @@ const defaultStyle = {
 }
 
 const transitionStyles = {
-  entering: { opacity: 1 },
-  entered:  { opacity: 1 },
-  exiting:  { opacity: 0 },
-  exited:  { opacity: 0 },
+  entering: { opacity: -3 },
+  entered: { opacity: 1 },
+  exiting: { opacity: 0 },
+  exited: { opacity: 0 }
 };
 
 function Home(props) {
 
- const [fade, setFade] = useState(false)
+  const [fade, setFade] = useState(false);
 
-// const changeFade = () => {
-//   setFade(!fade)
-// }
-useEffect(() => {
-  setFade(true)
-},[])
+  useEffect(() => {
+    setFade(!fade)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
 
   const [data] = useState([
@@ -47,19 +45,18 @@ useEffect(() => {
 
   return (
     <>
-     <Transition in={fade} timeout={duration}>
-    {state => (
-      <div style={{
-        ...defaultStyle,
-        ...transitionStyles[state]
-      }}>
-      <Hero />
-      <SkillsGallery data={skillData} />
-      <CardGallery data={data} />
-      </div>
-    )}
-  </Transition>
-      {/* <button onClick={changeFade}>change fade</button> */}
+      <Transition in={fade} timeout={duration}>
+        {state => (
+          <div style={{
+            ...defaultStyle,
+            ...transitionStyles[state]
+          }}>
+            <Hero />
+            <SkillsGallery data={skillData} />
+            <CardGallery data={data} />
+          </div>
+        )}
+      </Transition>
     </>
   );
 }
