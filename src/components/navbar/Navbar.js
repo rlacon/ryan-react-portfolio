@@ -13,7 +13,7 @@ const Navbar = (props) => {
         <FlexContainer>
           <Brand />
           <NavLinks>
-            <NavLink data={isOpen && setIsOpen} to="/" onClick={() => setIsOpen(!isOpen)} >Home</NavLink>
+            <NavLink data={isOpen ? setIsOpen : undefined} to="/" onClick={() => setIsOpen(!isOpen)} >Home</NavLink>
             <NavLink to="/portfolio">Projects</NavLink>
             <NavLink to="/about">About</NavLink>
           </NavLinks>

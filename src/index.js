@@ -7,10 +7,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
-    <React.StrictMode>
-      <ScrollToTop />
-      <App />
-    </React.StrictMode>
+    <ScrollToTop />
+    <App />
   </BrowserRouter>,
   document.getElementById("root")
 );

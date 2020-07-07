@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './assets/main.css';
-import { Transition } from 'react-transition-group';
 
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer';
@@ -14,23 +13,10 @@ import MockProj from './pages/MockProj';
 
 function App() {
   const [data, setData] = useState({ portfolioData: {}, navbarOpen: false });
-  const [toggleTransition, setToggleTransition] = useState(false)
-
-  const toggle = () => {
-    setToggleTransition(true)
-  }
 
   const handleNavbar = () => {
     setData({ navbarOpen: !data.navbarOpen });
   };
-
-  useEffect(() => {
-    fetch('/portfolioData.json')
-      .then(response => response.json())
-      // console.log(response.text())
-      .then(data => setData({ portfolioData: data }))
-    // .catch())
-  }, []);
 
   return (
     <Switch>
@@ -40,8 +26,9 @@ function App() {
             navbarState={data.navbarOpen}
             handleNavbar={handleNavbar}
           />
-          <Route exact path="/" data={data.portfolioData && data.portfolioData.main} render={() => {
-            return <Home setToggleTransition={setToggleTransition}/>
+          
+          <Route exact path="/" render={() => {
+            return <Home />
           }} />
 
           <Route path="/about" render={() => {
