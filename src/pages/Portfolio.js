@@ -19,10 +19,9 @@ const transitionStyles = {
 
 function Portfolio(props) {
   const [data] = useState([
-    { image: "https://source.unsplash.com/random", title: "Ghost Writer", description: "An app that does this", category: "Development", mainLink: "https://www.google.com/", githubLink: "https://www.google.com/" },
-    { image: "https://source.unsplash.com/random", title: "Ghost Writer", description: "An app that does this", category: "Development", mainLink: "https://www.google.com/", githubLink: "https://www.google.com/" },
-    { image: "https://source.unsplash.com/random", title: "Ghost Writer", description: "An app that does this", category: "Development", mainLink: "https://www.google.com/", githubLink: "https://www.google.com/" },
-    { image: "https://source.unsplash.com/random", title: "Ghost Writer", description: "An app that does this", category: "Development", mainLink: "https://www.google.com/", githubLink: "https://www.google.com/" }
+    { image: "/images/ghost_writer.png", title: "Ghost Writer", description: "A collaborative writing app that allows users to write different sections of a story. Once all sections have been written, the story moves to a Completed Stories page. Create an account, or log in with Username: guest and Password: guest123 to try out the app.", category: "Development", mainLink: "https://ghost-writer.herokuapp.com/", githubLink: "https://github.com/rlacon/Project-3---Ghost-writer-social/" },
+    { image: "/images/google-book-search-pic.png", title: "Google Books Search", description: "Demonstration of the Google Books API to input search queries and return a list of matching results.", category: "Development", mainLink: "https://rlacon-book-search.herokuapp.com/", githubLink: "https://github.com/rlacon/GoogleBooksSearch/" },
+    { image: "/images/game-matching-app-pic.png", title: "Game Matcher", description: "An app that allows users to select a criteria of favorite games and matches with other users who have made selections. Create an account, or log in with Username: 123 and Password: 123 to try out the app.", category: "Development", mainLink: "https://www.google.com/", githubLink: "https://www.google.com/" },
   ]);
 
   const [fade, setFade] = useState(false);
@@ -39,7 +38,7 @@ function Portfolio(props) {
           ...defaultStyle,
           ...transitionStyles[state]
         }}>
-          <CardGallery data={data} />
+          <CardGallery className="whitespace-pre-line" data={data} />
         </div>
       )}
     </Transition>

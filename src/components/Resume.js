@@ -10,7 +10,7 @@ class Resume extends Component {
           <div className=" text-lg col-span-1 h-auto">
             <p className="text-purple-700 font-bold leading-8">{t.company}</p>
             <p className="text-lg leading-8">{t.title}</p>
-            <p className="text-lg leading-8">{t.years}</p>
+            <p className="italic text-lg leading-8">{t.years}</p>
           </div>
           <div className="col-span-2">
             <p className="text-gray-700 text-lg leading-8">{t.description}</p>
@@ -26,7 +26,7 @@ class Resume extends Component {
           <div className=" text-lg col-span-1 h-auto">
             <p className="text-purple-700 font-bold leading-8">{t.school}</p>
             <p className="text-lg leading-8">{t.degree}</p>
-            <p className="text-lg leading-8">{t.graduated}</p>
+            <p className="italic text-lg leading-8">{t.graduated}</p>
           </div>
           <div className="col-span-2">
             <p className="text-gray-700 text-lg leading-8">{t.description}</p>
