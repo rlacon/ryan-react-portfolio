@@ -13,7 +13,7 @@ function SkillsGallery(props) {
               <div className="overflow-hidden bg-gray-800" key={i}>
                 <img className="block mx-auto h-24 w-24" src={image} alt="Skill" />
                 <div className="px-6 py-4 text-center">
-                  <div className="font-bold text-purple-500 text-xl">{title} </div>
+                  <div className="font-bold text-blue400 text-xl">{title} </div>
                   <p className="text-white text-base">{description}</p>
                 </div>
               </div>

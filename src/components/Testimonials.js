@@ -8,7 +8,7 @@ class Testimonials extends Component {
       return <div key={t.user}>
         <blockquote className="text-center bg-gray-800 p-6 ">
             <p className="text-white text-lg text-center leading-8">"{t.text}"</p>
-            <cite className="text-purple-500 font-bold text-lg leading-8">– {t.user}</cite>
+            <cite className="text-blue400 font-bold text-lg leading-8">– {t.user}</cite>
         </blockquote>
         <hr />
       </div>

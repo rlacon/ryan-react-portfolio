@@ -36,14 +36,21 @@ function Portfolio(props) {
       mainLink: "https://rlacon-book-search.herokuapp.com/",
       githubLink: "https://github.com/rlacon/GoogleBooksSearch/"
     }, {
+      image: "/images/clicky-game-pic.png",
+      title: "Clicky Game",
+      description: "A clicker game built in React.js. Click the images to score a point, but don't click one more than once or it's game over.",
+      category: "Development",
+      mainLink: "https://still-citadel-09620.herokuapp.com/",
+      githubLink: "https://github.com/rlacon/ClickyGame"
+    }, {
       image: "/images/game-matching-app-pic.png",
       title: "Game Matcher",
       description: "An app that allows users to select a criteria of favorite games and matches with other users who have made selections. Create an account, or log in with the following credentials:",
       userName: 'Username: 123',
       pass: 'Password: 123',
       category: "Development",
-      mainLink: "https://www.google.com/",
-      githubLink: "https://www.google.com/"
+      mainLink: "https://game-matching-app.herokuapp.com/dashboard",
+      githubLink: "https://github.com/rlacon/Project2"
     }]);
 
   const [fade, setFade] = useState(false);
@@ -67,4 +74,4 @@ function Portfolio(props) {
   );
 }
 
-export default Portfolio
+export default Portfolio;
