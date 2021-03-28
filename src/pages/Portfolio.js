@@ -20,6 +20,13 @@ const transitionStyles = {
 function Portfolio(props) {
   const [data] = useState([
     {
+      image: "/images/u-disc-pic.png",
+      title: "UDisc App Redesign Prototype",
+      description: "I redesigned an app to include a more robust social component.",
+      category: "Design",
+      mainLink: "https://www.figma.com/proto/mm4OTQgAcK3zvg3MkgLjDz/UDisc-App-Redesign?node-id=2%3A3&scaling=scale-down",
+      githubLink: ""
+    }, {
       image: "/images/ghost_writer.png",
       title: "Ghost Writer",
       description: "A collaborative writing app that allows users to write different sections of a story. Once all sections have been written, the story moves to a Completed Stories page. Create an account, or log in with the following credentials:",
