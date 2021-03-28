@@ -181,5 +181,6 @@ module.exports = {
   },
   variants: {
     opacity: ['responsive', 'hover']
-  }
+  },
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
 }
