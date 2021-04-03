@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Prototype from '../components/Prototype';
+import BackToMenuBtn from '../components/BackToMenuBtn';
 
 class UDisc extends Component {
   render() {
     return (
       <div>
         <div className="container mx-auto px-6 py-4">
+          <BackToMenuBtn />
           <h1 className="font-bold text-5xl text-center text-purple-500">U-Disc App Redesign</h1>
           <br />
           <p className="text-xl">I'm an avid user of the U-Disc app. I had some ideas to build out a more robust social component:</p>
