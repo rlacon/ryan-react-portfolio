@@ -9,7 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
-import MockProj from './pages/MockProj';
+import UDisc from './pages/UDisc';
 
 function App() {
   const [data, setData] = useState({ portfolioData: {}, navbarOpen: false });
@@ -39,8 +39,8 @@ function App() {
             return <Portfolio />
           }} />
 
-          <Route path="/portfolio/mockproj" render={() => {
-            return <MockProj />
+          <Route path="/portfolio/u-disc" render={() => {
+            return <UDisc />
           }} />
           <ScrollToTop />
           <Footer />
