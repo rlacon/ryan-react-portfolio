@@ -8,9 +8,9 @@ class UDisc extends Component {
       <div>
         <div className="container mx-auto px-6 py-4">
           <BackToMenuBtn />
-          <h1 className="font-bold text-5xl text-center text-purple-500">U-Disc App Redesign</h1>
+          <h1 className="font-bold text-5xl text-center text-purple-500">UDisc App Redesign</h1>
           <br />
-          <p className="text-xl">I'm an avid user of the U-Disc app. I had some ideas to build out a more robust social component:</p>
+          <p className="text-xl">I'm an avid user of the UDisc app. I had some ideas to build out a more robust social component:</p>
           <br />
           <ul className="text-gray-700 text-lg leading-8">
             <li>1. There will be a dedicated friends list.</li>
