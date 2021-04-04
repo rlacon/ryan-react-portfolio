@@ -166,7 +166,7 @@ const MoveOMatic = () => {
           className="m-auto"
           title="vimeo-player"
           src="https://player.vimeo.com/video/249092505"
-          width="640"
+          width="100%"
           height="359"
           frameborder="0"
           allowfullscreen
@@ -177,7 +177,7 @@ const MoveOMatic = () => {
           className="m-auto"
           title="vimeo-player"
           src="https://player.vimeo.com/video/249093547"
-          width="640"
+          width="100%"
           height="359"
           frameborder="0"
           allowfullscreen
@@ -212,7 +212,7 @@ const MoveOMatic = () => {
         className="m-auto"
         title="vimeo-player"
         src="https://player.vimeo.com/video/249106131"
-        width="640"
+        width="100%"
         height="359"
         frameborder="0"
         allowfullscreen
