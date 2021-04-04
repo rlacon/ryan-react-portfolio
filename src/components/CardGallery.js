@@ -43,8 +43,8 @@ const CardGallery = (props) => {
                 <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 border border-purple-700 rounded">
                   {title === "UDisc App Redesign Prototype" ? (
                     <Link to="/portfolio/u-disc">View Project</Link>
-                  ) : title === "" ? (
-                    <Link>gfh</Link>
+                  ) : title === "Move-O-Matic" ? (
+                    <Link to="/portfolio/move-o-matic">View Project</Link>
                   ) : (
                     <a href={mainLink} target="_blank" rel="noreferrer noopener">View Project</a>
                   )}

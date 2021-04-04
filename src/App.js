@@ -10,6 +10,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
 import UDisc from './pages/UDisc';
+import MoveOMatic from './pages/MoveOMatic';
 
 function App() {
   const [data, setData] = useState({ portfolioData: {}, navbarOpen: false });
@@ -26,7 +27,7 @@ function App() {
             navbarState={data.navbarOpen}
             handleNavbar={handleNavbar}
           />
-          
+
           <Route exact path="/" render={() => {
             return <Home />
           }} />
@@ -42,6 +43,11 @@ function App() {
           <Route path="/portfolio/u-disc" render={() => {
             return <UDisc />
           }} />
+
+          <Route path="/portfolio/move-o-matic" render={() => {
+            return <MoveOMatic />
+          }} />
+
           <ScrollToTop />
           <Footer />
         </div>

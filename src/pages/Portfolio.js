@@ -20,11 +20,18 @@ const transitionStyles = {
 function Portfolio(props) {
   const [data] = useState([
     {
+      image: "/images/placeholder.png",
+      title: "Move-O-Matic",
+      description: "I designed a toy with two classmates during my Master's program.",
+      category: "Design",
+      mainLink: "",
+      githubLink: ""
+    }, {
       image: "/images/u-disc-pic.png",
       title: "UDisc App Redesign Prototype",
       description: "I redesigned an app to include a more robust social component.",
       category: "Design",
-      mainLink: "https://www.figma.com/proto/mm4OTQgAcK3zvg3MkgLjDz/UDisc-App-Redesign?node-id=2%3A3&scaling=scale-down",
+      mainLink: "",
       githubLink: ""
     }, {
       image: "/images/ghost_writer.png",
