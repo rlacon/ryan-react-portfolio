@@ -93,7 +93,7 @@ const MoveOMatic = () => {
         that would let kids draw on a screen wearing wrist-bands. We set out to
         conduct research and validate the demand for this type of toy.
       </p>
-      <div className="w-1/2 mt-10 m-auto">
+      <div className="mt-10 m-auto">
         <ImageGallery images={ideateImages} />
       </div>
       <br />
@@ -228,7 +228,7 @@ const MoveOMatic = () => {
         features on notecards and let the kids vote on their favorite ones,
         which made the feedback process more interactive.
       </p>
-      <div className="w-1/2 mt-10 m-auto">
+      <div className="mt-10 m-auto">
         <ImageGallery images={buyAFeature} />
       </div>
       <br />
