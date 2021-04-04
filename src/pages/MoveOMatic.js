@@ -65,7 +65,7 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         The Brief
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         "Move-O-Matic" was a project at Jefferson University, in a class that
         combines UX and Industrial Design students (Fall 2017). The brief is as
         follows: <br />
@@ -80,14 +80,14 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         The Team
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         I worked with two other UX Designers on this project, Antonia and Ben.
       </p>
       <br />
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         Ideation
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         Antonia is a former dance major and wanted to design a toy that
         incorporated movement. Her initial concept was Body Draw, which is a toy
         that would let kids draw on a screen wearing wrist-bands. We set out to
@@ -101,7 +101,7 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         The Research
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         Finding kids to interview was challenging since no one in our group had
         access to kids in our target demographic of 6-8 years old. I caught a
         big break when I met Julia Yosen, who is the Camp Director at the
@@ -115,8 +115,8 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         Main Insights
       </h3>
-      <p>Based on my interview with Julia, I discovered the following:</p>
-      <ul>
+      <p className="text-gray-700 text-lg leading-8">Based on my interview with Julia, I discovered the following:</p>
+      <ul className="text-gray-700 text-lg leading-8">
         <li>
           1. Kids love building things and are happy about what they make.
         </li>
@@ -135,7 +135,7 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         Affinity Diagram
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         Antonia interviewed a dance teacher and gained some valuable information
         as well. With Body Draw, I was unsure if kids would want to get up and
         start dancing when testing our toy. She assured me that kids such as the
@@ -156,7 +156,7 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         Prototyping
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         We experimented with different ways to prototype our idea and see if it
         was fun, such as Google Drawings. Our first idea didn't work, and we
         tried using a projector to give more feedback to the user.
@@ -187,7 +187,7 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         Building the Prototype
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         I used Axure to build the space-themed mini-games with the script Ben
         wrote as inspiration. I had to create the games in such a way that I was
         in control of the interactions while creating the illusion that the
@@ -200,7 +200,7 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         Focus Group
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         Julia was kind enough to coordinate a focus group for us at the Handwork
         Studio with some of her most enthusiastic students. I was worried going
         into it that the kids wouldn't find the games fun, or that we'd
@@ -208,6 +208,7 @@ const MoveOMatic = () => {
         being bundles of energy was correct—they had a blast playing with the
         toy.​
       </p>
+      <br />
       <iframe
         className="m-auto"
         title="vimeo-player"
@@ -221,7 +222,7 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         Buy-A-Feature
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         Overall, the focus group was a resounding success. Even after the kids
         found out I was controlling the games, they were still asking to play as
         I packed up the projector. Ben also sketched a bunch of potential
@@ -235,7 +236,7 @@ const MoveOMatic = () => {
       <h3 className="text-center mb-2 font-bold text-3xl text-blue500">
         Takeaways
       </h3>
-      <p>
+      <p className="text-gray-700 text-lg leading-8">
         My group and I set out to design a toy that would keep kids active and
         had a secretive learning component, which I believe we accomplished.
         During our "Buy-a-Feature" session, the kids said they didn't want to
