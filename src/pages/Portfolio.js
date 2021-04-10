@@ -20,7 +20,7 @@ const transitionStyles = {
 function Portfolio(props) {
   const [data] = useState([
     {
-      image: "/images/placeholder.png",
+      image: "/images/moveomatic-case-study-pic.png",
       title: "Move-O-Matic",
       description: "I designed a toy with two classmates during my Master's program.",
       category: "Design",
@@ -65,6 +65,20 @@ function Portfolio(props) {
       category: "Development",
       mainLink: "https://game-matching-app.herokuapp.com/dashboard",
       githubLink: "https://github.com/rlacon/Project2"
+    }, {
+      image: "/images/lacons-pharmacy-pic.png",
+      title: "Responsive Website",
+      description: "I created a website for my dad's pharmacy, which became incredibly useful during the Covid-19 vaccination process.",
+      category: "Development",
+      mainLink: "http://www.laconspharmacy.com/",
+      githubLink: "https://github.com/laconspharmacy/laconspharmacy.github.io"
+    }, {
+      image: "/images/giphy-api-pic.png",
+      title: "Giphy API",
+      description: "Demonstration of the Giphy API with a Simpsons theme.",
+      category: "Development",
+      mainLink: "https://rlacon.github.io/giphy-api/",
+      githubLink: "https://github.com/rlacon/giphy-api"
     }]);
 
   const [fade, setFade] = useState(false);
