@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import portfolioData from '../assets/portfolioData';
+import DownloadResumeBtn from "./DownloadResumeBtn";
 
 class Resume extends Component {
   render() {
@@ -40,7 +41,11 @@ class Resume extends Component {
       <div className="container mx-auto px-6 py-4">
         <h2 className="text-center mb-6 font-bold text-5xl text-purple-500">Resume</h2>
         <div className="mb-12">
+          <div className="flex items-center justify-center my-5">
+            <DownloadResumeBtn />
+          </div>
           <h3 className="text-center mb-2 font-bold text-3xl text-blue500">Work</h3>
+
           {work}
         </div>
         <h3 className="text-center mb-2 font-bold text-3xl text-blue500">Education</h3>
