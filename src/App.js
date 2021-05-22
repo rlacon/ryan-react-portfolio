@@ -11,6 +11,7 @@ import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
 import UDisc from './pages/UDisc';
 import MoveOMatic from './pages/MoveOMatic';
+import WriteHaven from './pages/WriteHaven';
 
 function App() {
   const [data, setData] = useState({ portfolioData: {}, navbarOpen: false });
@@ -46,6 +47,10 @@ function App() {
 
           <Route path="/portfolio/move-o-matic" render={() => {
             return <MoveOMatic />
+          }} />
+
+          <Route path="/portfolio/write-haven" render={() => {
+            return <WriteHaven />
           }} />
 
           <ScrollToTop />

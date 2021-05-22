@@ -45,6 +45,8 @@ const CardGallery = (props) => {
                     <Link to="/portfolio/u-disc">View Project</Link>
                   ) : title === "Move-O-Matic" ? (
                     <Link to="/portfolio/move-o-matic">View Project</Link>
+                  ) : title === "Write Haven" ? (
+                    <Link to="/portfolio/write-haven">View Project</Link>
                   ) : (
                     <a href={mainLink} target="_blank" rel="noreferrer noopener">View Project</a>
                   )}

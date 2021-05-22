@@ -20,6 +20,13 @@ const transitionStyles = {
 function Portfolio(props) {
   const [data] = useState([
     {
+      image: "/images/write-haven.png",
+      title: "Write Haven",
+      description: "I designed a writing app for my thesis at Thomas Jefferson University.",
+      category: "Design",
+      mainLink: "",
+      githubLink: ""
+    }, {
       image: "/images/moveomatic-case-study-pic.png",
       title: "Move-O-Matic",
       description: "I designed a toy with two classmates during my Master's program.",
