@@ -12,8 +12,8 @@ function Hero(props) {
           <h2 className="py-8 text-5xl font-bold mb-2 text-white">I'm a <ReactRotatingText className="RotatingTextStyle" items={['Designer', 'Developer', 'Researcher', 'Problem-Solver', 'Googling Expert']} /></h2>
         </RotatingTextStyle>
         {/* <AnchorLink offset='100' href="#skills" className="underline text-white font-bold py-4 pr-8 uppercase tracking-wider">Skills</AnchorLink>
-        <NavLink to="/portfolio" className="underline text-white font-bold py-4 px-8 uppercase tracking-wider" href="#work">See my work</NavLink>
-        <a className="underline text-white font-bold py-4 px-8 uppercase tracking-wider" href="https://github.com/rlacon/ryan-react-portfolio" target="_blank">Github site link</a> */}
+        <NavLink to="/portfolio" className="underline text-white font-bold py-4 px-8 uppercase tracking-wider" href="#work">See my work</NavLink> */}
+        <a className="underline text-white font-bold py-4 px-8 uppercase tracking-wider" href="https://github.com/rlacon/ryan-react-portfolio" target="_blank">Github site link</a>
       </div>
     </div>
   );
