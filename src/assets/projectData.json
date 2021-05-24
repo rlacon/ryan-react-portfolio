@@ -1,7 +1,7 @@
 [
   {
-    "image": "/images/write-haven.png",
-    "title": "Write Haven",
+    "image": "/images/write-haven-wireframes.png",
+    "title": "Write Haven Thesis",
     "description": "I designed a writing app for my thesis at Thomas Jefferson University.",
     "category": "Design",
     "mainLink": "",
@@ -24,14 +24,12 @@
     "githubLink": ""
   },
   {
-    "image": "/images/ghost_writer.png",
-    "title": "Ghost Writer",
-    "description": "A collaborative writing app that allows users to write different sections of a story. Once all sections have been written, the story moves to a Completed Stories page. Create an account, or log in with the following credentials:",
-    "userName": "Username: guest",
-    "pass": "Password: guest123",
-    "category": "Development",
-    "mainLink": "https://ghost-writer.herokuapp.com/",
-    "githubLink": "https://github.com/rlacon/Project-3---Ghost-writer-social/"
+    "image": "/images/write-haven-app.png",
+    "title": "Writing App",
+    "description": "I developed a version of my thesis along with two classmates. It has a Firebase DB, the random quote API, and a word counter.",
+    "category": "Design",
+    "mainLink": "https://rlacon.github.io/project-1-app/index.html",
+    "githubLink": "https://github.com/rlacon/project-1-app"
   },
   {
     "image": "/images/google-book-search-pic.png",
