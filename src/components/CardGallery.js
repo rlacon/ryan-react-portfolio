@@ -40,15 +40,15 @@ const CardGallery = (props) => {
                 <p className="text-gray-700 font-semibold text-base">{pass}</p>
               </div>
               <div className="mt-auto px-6 py-4">
-                <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 border border-purple-700 rounded">
+                <button className="bg-purple-500 hover:bg-purple-700 text-white py-2 font-bold border border-purple-700 rounded">
                   {title === "UDisc App Redesign Prototype" ? (
-                    <Link to="/portfolio/u-disc">View Project</Link>
+                    <Link className="py-2 px-4" to="/portfolio/u-disc">View Project</Link>
                   ) : title === "Move-O-Matic" ? (
-                    <Link to="/portfolio/move-o-matic">View Project</Link>
+                    <Link className="py-2 px-4" to="/portfolio/move-o-matic">View Project</Link>
                   ) : title === "Write Haven" ? (
-                    <Link to="/portfolio/write-haven">View Project</Link>
+                    <Link className="py-2 px-4" to="/portfolio/write-haven">View Project</Link>
                   ) : (
-                    <a href={mainLink} target="_blank" rel="noreferrer noopener">View Project</a>
+                    <a className="py-2 px-4" href={mainLink} target="_blank" rel="noreferrer noopener">View Project</a>
                   )}
                 </button>
                 <a className={githubLink === "" ? "hidden" : "text-blue500 hover:text-blue700 underline font-bold py-4 px-8 uppercase tracking-wider"} href={githubLink} target="_blank" rel="noreferrer noopener">Github</a>
