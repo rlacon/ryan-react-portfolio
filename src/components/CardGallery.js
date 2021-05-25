@@ -45,7 +45,7 @@ const CardGallery = (props) => {
                     <Link className="py-2 px-4" to="/portfolio/u-disc">View Project</Link>
                   ) : title === "Move-O-Matic" ? (
                     <Link className="py-2 px-4" to="/portfolio/move-o-matic">View Project</Link>
-                  ) : title === "Write Haven" ? (
+                  ) : title === "Write Haven Thesis" ? (
                     <Link className="py-2 px-4" to="/portfolio/write-haven">View Project</Link>
                   ) : (
                     <a className="py-2 px-4" href={mainLink} target="_blank" rel="noreferrer noopener">View Project</a>
