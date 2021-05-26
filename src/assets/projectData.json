@@ -27,7 +27,7 @@
     "image": "/images/write-haven-app.png",
     "title": "Writing App",
     "description": "I developed a version of my thesis along with two classmates. It has a Firebase DB, the random quote API, a thesaurus, and a word counter.",
-    "category": "Design",
+    "category": "Development",
     "mainLink": "https://rlacon.github.io/project-1-app/index.html",
     "githubLink": "https://github.com/rlacon/project-1-app"
   },
