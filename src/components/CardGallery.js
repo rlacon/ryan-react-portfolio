@@ -51,7 +51,7 @@ const CardGallery = (props) => {
                     <a className="py-2 px-4" href={mainLink} target="_blank" rel="noreferrer noopener">View Project</a>
                   )}
                 </button>
-                <a className={githubLink === "" ? "hidden" : "text-blue500 hover:text-blue700 underline font-bold py-4 px-8 uppercase tracking-wider"} href={githubLink} target="_blank" rel="noreferrer noopener">Github</a>
+                <a className={githubLink === "" ? "hidden" : "text-blue500 hover:text-blue700 underline font-bold py-4 pl-4 uppercase tracking-wider"} href={githubLink} target="_blank" rel="noreferrer noopener">Github</a>
                 <a href={extraLink} target="_blank" rel="noreferrer noopener" className="text-blue500 hover:text-blue700 underline font-bold py-4 px-8 uppercase tracking-wider">{optionalLink}</a>
               </div>
             </div>
