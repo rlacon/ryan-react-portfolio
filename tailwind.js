@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.js"],
   target: 'relaxed',
   prefix: '',
   important: false,
@@ -200,7 +200,7 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
-    container: {padding: '10000px'},
+    container: { padding: '10000px' },
     cursor: {
       auto: 'auto',
       default: 'default',

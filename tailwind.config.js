@@ -1,4 +1,5 @@
 module.exports = {
+  purge: ["./src/**/*.js"],
   important: true,
   plugins: [
     require('tailwindcss-gradients')
